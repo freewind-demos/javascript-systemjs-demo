@@ -9,6 +9,9 @@ SystemJS跟RequireJS有点像，可以在前端load使用不同模块类型(`com
 
 这个例子也是我费了九牛二虎之力才弄出来的，还是用webpack吧。
 
+跟Webpack相比起来，它的特点应该是可以动态load一个js文件，不像webpack那样，是在编译时就把依赖打成了一个包。
+所以如果我们的确需要动态load一个文件（比如在某些情况下，需要动态load一个module），可能还是需要使用像SystemJS这样的，否则的话使用webpack最简单。
+
 ```
 npm install
 npm run demo
